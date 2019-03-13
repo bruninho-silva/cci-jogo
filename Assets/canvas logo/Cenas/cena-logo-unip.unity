@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 2057492490}
   - component: {fileID: 2057492489}
   - component: {fileID: 2057492491}
+  - component: {fileID: 2057492493}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -545,3 +546,17 @@ RectTransform:
   m_AnchoredPosition: {x: 282, y: 282}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2057492493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057492488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60c1e470ba3af0d44b43005773223c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempo: 0
+  cena: cena-menu

@@ -207,6 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60c1e470ba3af0d44b43005773223c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tempo: 0
+  cena: cena-logo-unip
 --- !u!1 &391080643
 GameObject:
   m_ObjectHideFlags: 0
