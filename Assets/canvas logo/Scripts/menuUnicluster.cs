@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class menuUnicluster : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class menuUnicluster : MonoBehaviour
     {
         tempo +=Time.deltaTime;
 		if(tempo >= 3){
-			Application.LoadLevel(cena);
-		}
+            SceneManager.LoadScene(cena);
+        }
     }
 }
