@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/canvas logo/Cenas/cena-logo-unicluster.unity
+    guid: 2cf746e59a6a96b4e87372bb0dac321e
+  - enabled: 1
+    path: Assets/canvas logo/Cenas/cena-logo-unip.unity
+    guid: 1c577c050323466499a1e04ae48bcc67
+  - enabled: 1
     path: Assets/Cenas/Menu/cena-menu.unity
     guid: 994177d86c2ec0747a88b6f29dc18daa
   m_configObjects: {}
