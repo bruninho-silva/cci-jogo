@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Cenas/Menu/cena-menu.unity
+    guid: 994177d86c2ec0747a88b6f29dc18daa
   m_configObjects: {}
