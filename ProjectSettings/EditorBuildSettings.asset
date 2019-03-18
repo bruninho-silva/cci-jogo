@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cena Menu/cena-nome.unity
     guid: 52091949e7bcf034a8419ce2a3302b86
+  - enabled: 1
+    path: Assets/Scenes/Cena Menu/cena-rank.unity
+    guid: e3477c27bfdcbfd45870d5ed972e6c5d
   m_configObjects: {}
