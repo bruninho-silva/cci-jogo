@@ -6,6 +6,7 @@ TagManager:
   tags:
   - porta
   - chao
+  - player
   layers:
   - Default
   - TransparentFX

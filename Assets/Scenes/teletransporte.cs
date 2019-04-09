@@ -9,44 +9,53 @@ public class teletransporte : MonoBehaviour
     public GameObject button;
 
     public GameObject personagem;
-    public GameObject currentPoint;
+    public GameObject portalAtual;
 
-    public bool abrir = false;
+    public bool buttonClicado = false;
+    public bool portaAberta = false;
 
     public GameObject[] teste;
     int index;
 
+    private void OnTriggerEnter2D(Collider2D atual)
+    {
+        print("entrou");
+        if (atual.gameObject.CompareTag("player"))
+        {
 
-    // Update is called once per frame
+            index = Random.Range(0, teste.Length);
+            portalAtual = teste[index];
+
+            print("---------ENTROU NO COMPARE");
+            portaAberta = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        portaAberta = false;
+    }
+
+    public void ativaPorta()
+    {
+        if (portaAberta == true)
+        {
+            buttonClicado = true;
+        }
+
+    }
+
+    // Atualização é chamada uma vez por quadro
     void Update()
     {
-        index = Random.Range(0, teste.Length);
-        currentPoint = teste[index];
-    }
-
-    void OnCollisionEnter2D(Collision2D porta)
-    {
-
-        if (porta.gameObject.CompareTag("porta"))
+        if (buttonClicado == true && portaAberta == true)
         {
-            personagem.transform.position = currentPoint.transform.position;
-            abrir = true;
-        } else
-        {
-            abrir = false;
+            print("---------ENTROU MOVIMENTAR");
+            personagem.transform.position = portalAtual.transform.position;
+            buttonClicado = false;
+            portaAberta = false;
         }
-    }
 
-    void OnGUI()
-    {
-        if (Event.current.button == 1)
-        {
-            if (Event.current.type == EventType.MouseDown)
-            {
-                print("funciona");
-            }
-        }
     }
-
 }
 
