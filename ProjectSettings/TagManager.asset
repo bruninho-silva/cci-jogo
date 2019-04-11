@@ -9,6 +9,7 @@ TagManager:
   - player
   - moedas
   - GameMaster
+  - ladrao
   layers:
   - Default
   - TransparentFX
