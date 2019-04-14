@@ -12,33 +12,47 @@ public class teletransporte : MonoBehaviour
     public GameObject portalAtual;
 
     public bool buttonClicado = false;
-    public bool portaAberta = false;
+    public bool playerPortaAberta = false;
+    public bool ladraoPortaAberta = false;
+    public bool spot = false;
 
     public GameObject[] teste;
-    int index;
+    public int index;
 
-    private void OnTriggerEnter2D(Collider2D atual)
+    public Transform visaoInicio; //inicio do campo de visão 
+    public Transform visaoFim; //final do campo de visão 
+
+    public void OnTriggerEnter2D(Collider2D atual)
     {
-        print("entrou");
         if (atual.gameObject.CompareTag("player"))
         {
 
             index = Random.Range(0, teste.Length);
             portalAtual = teste[index];
 
-            print("---------ENTROU NO COMPARE");
-            portaAberta = true;
+            playerPortaAberta = true;
+        }
+        else
+
+        //Physics2D.Linecast(atual.transform.position, atual.transform.position, 1 << LayerMask.NameToLayer("ladrao"))
+        if (atual.gameObject.CompareTag("ladrao"))
+        {
+            index = Random.Range(0, teste.Length);
+            portalAtual = teste[index];
+
+            ladraoPortaAberta = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        portaAberta = false;
+        playerPortaAberta = false;
+        ladraoPortaAberta = false;
     }
 
     public void ativaPorta()
     {
-        if (portaAberta == true)
+        if (playerPortaAberta == true)
         {
             buttonClicado = true;
         }
@@ -48,13 +62,25 @@ public class teletransporte : MonoBehaviour
     // Atualização é chamada uma vez por quadro
     void Update()
     {
-        if (buttonClicado == true && portaAberta == true)
+
+        GameObject ladrao = GameObject.FindGameObjectWithTag("ladrao");
+
+        if (buttonClicado == true && playerPortaAberta == true)
         {
-            print("---------ENTROU MOVIMENTAR");
             personagem.transform.position = portalAtual.transform.position;
             buttonClicado = false;
-            portaAberta = false;
+            playerPortaAberta = false;
         }
+        else
+
+        if (ladraoPortaAberta == true && spot == true)
+        {
+            ladrao.transform.position = portalAtual.transform.position;
+            ladraoPortaAberta = false;
+        }
+
+        Debug.DrawLine(visaoInicio.position, visaoFim.position, Color.red);
+        spot = Physics2D.Linecast(visaoInicio.position, visaoFim.position, 1 << LayerMask.NameToLayer("player"));
 
     }
 }

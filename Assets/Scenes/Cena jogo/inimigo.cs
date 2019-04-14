@@ -51,7 +51,6 @@ public class inimigo : MonoBehaviour
     {
         Debug.DrawLine(inicioCP.position, fimCP.position, Color.green);
         spot = Physics2D.Linecast(inicioCP.position, fimCP.position, 1 << LayerMask.NameToLayer("player"));
-        print(LayerMask.NameToLayer("player"));
     }
 
     public void Persegue()
