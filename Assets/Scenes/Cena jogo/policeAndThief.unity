@@ -7701,24 +7701,6 @@ MonoBehaviour:
   index: 0
   visaoInicio: {fileID: 894240070}
   visaoFim: {fileID: 1484451184}
---- !u!1 &1328274488 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7731292513415275919, guid: 416496f0d86c98444b27df44311ee125,
-    type: 3}
-  m_PrefabInstance: {fileID: 1132992697}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1328274489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328274488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e392029510b86b04fb65cfbc542369cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1345438891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6678048095512605773, guid: 4ab8300c3f4ad0446aa8aec4772d0a78,
@@ -7749,6 +7731,45 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4789320966231388333}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1346751927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346751921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e392029510b86b04fb65cfbc542369cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 7731292513415275915, guid: 416496f0d86c98444b27df44311ee125, type: 3}
+  regeneraAleatorio:
+  - {fileID: 1125845181}
+  - {fileID: 1842693070}
+  - {fileID: 56721533}
+  - {fileID: 857420302}
+  - {fileID: 1051017129}
+  - {fileID: 521411727}
+  - {fileID: 1549237160}
+  - {fileID: 1570595087}
+  - {fileID: 787455617}
+  - {fileID: 1698651491}
+  - {fileID: 187077088}
+  - {fileID: 155326684}
+  - {fileID: 1049783551}
+  - {fileID: 1619405236}
+  - {fileID: 1835226010}
+  - {fileID: 981497445}
+  - {fileID: 642874050}
+  - {fileID: 507085781}
+  - {fileID: 984206907}
+  - {fileID: 689952697}
+  - {fileID: 1011965637}
+  - {fileID: 1861355776}
+  - {fileID: 1459479597}
+  - {fileID: 1069815623}
+  index: 0
 --- !u!114 &1346751929 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4789320967040580884, guid: 7e0cd6d935c22974c86532ca489c14e4,

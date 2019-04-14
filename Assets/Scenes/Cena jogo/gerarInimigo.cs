@@ -5,25 +5,33 @@ using UnityEngine;
 public class gerarInimigo : MonoBehaviour
 {
 
+    public Transform enemy;
+    //public Transform regenera;
+    public Transform[] regeneraAleatorio;
+    private Transform regenera;
+    public int index;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "player")
+        GameObject ladrao = GameObject.FindGameObjectWithTag("ladrao");
+
+        if (collision.gameObject.tag == "ladrao")
         {
-            print("02");
+
+            index = Random.Range(0, regeneraAleatorio.Length);
+            regenera = regeneraAleatorio[index];
+
             ScoreTextScript.coinAmount += 20;
-            Destroy(gameObject);
+            Destroy(ladrao);
+            gerar();
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    void gerar()
     {
-        
+        var enemyTransform = Instantiate(enemy) as Transform;
+        enemyTransform.position = regenera.transform.position;
+        //enemyTransform.position = regenera.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
