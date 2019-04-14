@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c472397a308b4a244a8cca4686fabea8
+guid: 19fae7cec70b8ea49a2b013e60654daa
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -97,8 +97,8 @@ TextureImporter:
     outline:
     - - {x: -96, y: -28}
       - {x: -96, y: 32}
-      - {x: 96, y: 32}
-      - {x: 96, y: -28}
+      - {x: -65, y: 32}
+      - {x: -65, y: -28}
     physicsShape:
     - - {x: -96, y: -23}
       - {x: -96, y: 32}
