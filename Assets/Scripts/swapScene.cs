@@ -25,4 +25,8 @@ public class swapScene : MonoBehaviour
     {
         SceneManager.LoadScene("cena-teste-Bruno");
     }
+    public void Jogo()
+    {
+        SceneManager.LoadScene("policeAndThief");
+    }
 }

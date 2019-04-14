@@ -4464,7 +4464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.020555556}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.5620117, y: -3.9945984}
+  m_AnchoredPosition: {x: -1.5620117, y: -3.994629}
   m_SizeDelta: {x: 406.25, y: 397.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828432771
@@ -9488,6 +9488,7 @@ Transform:
   - {fileID: 11310219}
   - {fileID: 1783798311}
   - {fileID: 1611207415}
+  - {fileID: 1823578239}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10947,6 +10948,63 @@ Transform:
   m_Father: {fileID: 513521068}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1823578238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823578239}
+  - component: {fileID: 1823578240}
+  m_Layer: 0
+  m_Name: colider piso 5
+  m_TagString: chao
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1823578239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823578238}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.5, y: 3.44, z: -32.96209}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1683675325}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1823578240
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823578238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -15.6327095, y: -3.8491786}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 41.5, y: 0.04984808}
+  m_EdgeRadius: 0
 --- !u!1 &1829716242
 GameObject:
   m_ObjectHideFlags: 0
@@ -12477,12 +12535,12 @@ PrefabInstance:
     - target: {fileID: 4789320967040580884, guid: 7e0cd6d935c22974c86532ca489c14e4,
         type: 3}
       propertyPath: forca
-      value: 280
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 4789320967040580884, guid: 7e0cd6d935c22974c86532ca489c14e4,
         type: 3}
       propertyPath: velocidade
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4789320966435699905, guid: 7e0cd6d935c22974c86532ca489c14e4,
         type: 3}
