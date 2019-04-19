@@ -10,6 +10,7 @@ TagManager:
   - moedas
   - GameMaster
   - ladrao
+  - inimigo
   layers:
   - Default
   - TransparentFX
