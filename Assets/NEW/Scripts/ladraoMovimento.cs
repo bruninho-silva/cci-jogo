@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class inimigo : MonoBehaviour
+public class ladraoMovimento : MonoBehaviour
 {
-    public Transform DetectaChao;
+
+    [Header("Movimento")]
     public float distancia = 3;
-    public bool olhandoParaDireita;
-    public float velocidadeNormal;
     public float velocidade = 3;
 
-    public bool spot = false; //booleana para saber se o jogador esta dentro do campo de visão
-    public Transform target; //alvo que o inimigo vai perseguir, nesse caso o jogador
+    [Header("GameObject")]
+    public Transform DetectaChao;
     public Transform inicioCP; //inicio do campo de visão 
     public Transform fimCP; //final do campo de visão 
+
+    private bool olhandoParaDireita;
+    private bool spot = false; //booleana para saber se o jogador esta dentro do campo de visão
+    private Transform target; //alvo que o inimigo vai perseguir, nesse caso o jogador
+    
 
     void Start()
     {
@@ -32,16 +36,18 @@ public class inimigo : MonoBehaviour
     // Se estiver alguma parede na frente, irá retornar
     public void Patrulha()
     {
-        transform.Translate(Vector2.right * velocidadeNormal * Time.deltaTime);
+        transform.Translate(Vector2.right * velocidade * Time.deltaTime);
         RaycastHit2D groundInfo = Physics2D.Raycast(DetectaChao.position, Vector2.down, distancia);
 
         if (groundInfo.collider == false)
         {
+            // Ira andar para Direita
             if (olhandoParaDireita == true)
             {
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 olhandoParaDireita = false;
             }
+            // Ira andar para Esquerda
             else
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
@@ -50,12 +56,14 @@ public class inimigo : MonoBehaviour
         }
     }
 
+    // Campo de visão
     public void Raycasting()
     {
         Debug.DrawLine(inicioCP.position, fimCP.position, Color.green);
         spot = Physics2D.Linecast(inicioCP.position, fimCP.position, 1 << LayerMask.NameToLayer("player"));
     }
 
+    // Caso encontre o Player, ira perseguir.
     public void Persegue()
     {
         if (spot == true && olhandoParaDireita == true)
@@ -67,10 +75,6 @@ public class inimigo : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
             olhandoParaDireita = true;
-        }
-        else if (spot == false)
-        {
-            velocidadeNormal = velocidade;
         }
     }
 }
