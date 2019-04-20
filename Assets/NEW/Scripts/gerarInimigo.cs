@@ -4,34 +4,24 @@ using UnityEngine;
 
 public class gerarInimigo : MonoBehaviour
 {
+    [Header("Renascer")]
+    public Transform local;
+    public Transform inimigo;
 
-    public Transform enemy;
-    //public Transform regenera;
-    public Transform[] regeneraAleatorio;
-    private Transform regenera;
-    public int index;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject ladrao = GameObject.FindGameObjectWithTag("ladrao");
-
-        if (collision.gameObject.tag == "ladrao")
+        if (collision.gameObject.tag == "player")
         {
-
-            index = Random.Range(0, regeneraAleatorio.Length);
-            regenera = regeneraAleatorio[index];
-
-            ScoreTextScript.coinAmount += 20;
-            Destroy(ladrao);
+            print("Entrou");
+            ScoreTextScript.coinAmount -= 5;
+            Destroy(gameObject);
             gerar();
         }
     }
 
     void gerar()
     {
-        var enemyTransform = Instantiate(enemy) as Transform;
-        enemyTransform.position = regenera.transform.position;
-        //enemyTransform.position = regenera.transform.position;
+        var enemyTransform = Instantiate(inimigo) as Transform;
+        enemyTransform.position = local.transform.position;
     }
-
 }

@@ -20,7 +20,7 @@ public class Vida : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("inimigo")) { 
+        if (collision.gameObject.CompareTag("inimigo")) {
             if (life3isGone == false)
             {
                 life03.transform.Translate(100f, 0f, 0f);

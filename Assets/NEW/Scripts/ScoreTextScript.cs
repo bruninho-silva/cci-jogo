@@ -16,6 +16,7 @@ public class ScoreTextScript : MonoBehaviour
     void Update()
     {
         text.text = coinAmount.ToString();
+        PlayerPrefs.SetString("pontos", coinAmount.ToString());
     }
 
 }
