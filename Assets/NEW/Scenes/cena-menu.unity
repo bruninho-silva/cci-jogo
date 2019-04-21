@@ -889,7 +889,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 467601680}
-        m_MethodName: Jogo
+        m_MethodName: CenaJogo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

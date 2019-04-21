@@ -10,12 +10,28 @@ public class Vida : MonoBehaviour
     public GameObject life03;
     public bool life2isGone;
     public bool life3isGone;
+    public GameObject GameOverUI;
+    public bool gameover = false;
 
     // Start is called before the first frame update
     void Start()
     {
         life2isGone = false;
         life3isGone = false;
+    }
+
+    void Update()
+    {
+        if (gameover)
+        {
+            GameOverUI.SetActive(true);
+            Time.timeScale = 0;
+        }
+        if (!gameover)
+        {
+            GameOverUI.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,14 +49,9 @@ public class Vida : MonoBehaviour
             }
             else if (life3isGone == true && life2isGone == true)
             {
-                SceneManager.LoadScene("cena-menu");
-            }
+                life01.transform.Translate(100f, 0f, 0f);
+                gameover = true;
+            }  
         }
     }
-
-    // Atualização é chamada uma vez por quadro
-    void Update()
-    {
-        
     }
-}
