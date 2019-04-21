@@ -29,4 +29,8 @@ public class swapScene : MonoBehaviour
     {
         SceneManager.LoadScene("policeAndThief");
     }
+    public void Sair()
+    {
+        Application.Quit();
+    }
 }
