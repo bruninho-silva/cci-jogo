@@ -31,7 +31,7 @@ public class gerarLadrao : MonoBehaviour
     {
         var enemyTransform = Instantiate(enemy) as Transform;
         enemyTransform.position = regenera.transform.position;
-        //enemyTransform.position = regenera.transform.position;
+
     }
 
 }
