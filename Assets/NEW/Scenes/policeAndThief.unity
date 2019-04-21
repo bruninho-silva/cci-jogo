@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.60520583, g: 0.42419046, b: 0.40511414, a: 1}
+  m_IndirectSpecularColor: {r: 0.60362554, g: 0.42510337, b: 0.4062006, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12413,30 +12413,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 7731292513415275915, guid: 416496f0d86c98444b27df44311ee125, type: 3}
   regeneraAleatorio:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1300341641}
+  - {fileID: 1972308643}
+  - {fileID: 260040709}
+  - {fileID: 1928191642}
   index: 0
 --- !u!114 &1346751926
 MonoBehaviour:
