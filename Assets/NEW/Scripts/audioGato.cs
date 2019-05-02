@@ -17,6 +17,7 @@ public class audioGato : MonoBehaviour
     {
         if (collision.CompareTag("player"))
         {
+            Handheld.Vibrate();
             Instantiate(efeitoGato, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z), Quaternion.identity);
         }
     }

@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/NEW/Scenes/cena-logo-unip.unity
-    guid: 6c111c5727e6b7e499658825d33af687
+    guid: 13b5075e52fd06442ac2be46f669b405
   - enabled: 1
     path: Assets/NEW/Scenes/cena-logo-unicluster.unity
     guid: 4abc442d188a98d43969aaaaeeb74e56
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NEW/Scenes/cena-rank.unity
     guid: e3477c27bfdcbfd45870d5ed972e6c5d
+  - enabled: 1
+    path: Assets/NEW/Scenes/cena-tutorial.unity
+    guid: 6c111c5727e6b7e499658825d33af687
   - enabled: 1
     path: Assets/teste/cena-teste-Bruno.unity
     guid: a9bf94e5b1d74454997940837aa3c211

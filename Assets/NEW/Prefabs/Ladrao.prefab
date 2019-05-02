@@ -85,7 +85,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 168f73afce937ac43b5d7fc74356598b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 6a3615bf253883a45afd10b579e26975, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -154,13 +154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6078f3866a9e46742ade75bac6a91953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DetectaChao: {fileID: 7731292513806996906}
   distancia: 3
-  olhandoParaDireita: 0
-  velocidadeNormal: 0
   velocidade: 4
-  spot: 0
-  target: {fileID: 0}
+  DetectaChao: {fileID: 7731292513806996906}
   inicioCP: {fileID: 7731292512882288560}
   fimCP: {fileID: 7731292513928088619}
 --- !u!95 &7731292513415275918

@@ -25,6 +25,10 @@ public class swapScene : MonoBehaviour
     {
         SceneManager.LoadScene("policeAndThief");
     }
+    public void CenaTutorial()
+    {
+        SceneManager.LoadScene("cena-tutorial");
+    }
     public void Sair()
     {
         Application.Quit();

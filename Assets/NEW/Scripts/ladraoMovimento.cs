@@ -26,7 +26,7 @@ public class ladraoMovimento : MonoBehaviour
     }
 
     // Atualização é chamada uma vez por quadro
-    void Update()
+    void FixedUpdate()
     {
         Patrulha();
         Raycasting();

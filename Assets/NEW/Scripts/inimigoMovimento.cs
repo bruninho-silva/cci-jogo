@@ -19,7 +19,7 @@ public class inimigoMovimento : MonoBehaviour
     }
 
     // Atualização é chamada uma vez por quadro
-    void Update()
+    void FixedUpdate()
     {
         Patrulha();
     }
