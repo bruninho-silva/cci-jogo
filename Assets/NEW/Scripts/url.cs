@@ -13,4 +13,20 @@ public class url : MonoBehaviour
     {
         Application.OpenURL("https://twitter.com/unicluster");
     }
+    public void OpenMarceloLinkedin()
+    {
+        Application.OpenURL("https://www.linkedin.com/in/marcelo-bueno-developer/");
+    }
+    public void OpenBrunoLinkedin()
+    {
+        Application.OpenURL("https://twitter.com/unicluster");
+    }
+    public void OpenWallanLinkedin()
+    {
+        Application.OpenURL("https://www.linkedin.com/in/wallanpsantos/");
+    }
+    public void OpenFabioLinkedin()
+    {
+        Application.OpenURL("https://www.linkedin.com/in/fabioluispereira/");
+    }
 }
