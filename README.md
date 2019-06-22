@@ -1,4 +1,4 @@
-    # Projeto CCI ( Ciência da Computação Integrada ) - UNIP
+    # Projeto CCI ( Ciência da Computação Integrada ) - UNIP - 2019
 
     Projeto desenvolvido no 7º semestre de ciência da computação.
 
@@ -10,7 +10,7 @@
 
     Desenvolvedores/Alunos:
    
-        Bruno de Paa
+        Bruno de Paula
         Marcelo Bueno
         Wallan Pereira
     
