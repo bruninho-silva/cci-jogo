@@ -1,29 +1,30 @@
     # Projeto CCI ( Ciência da Computação Integrada ) - UNIP - 2019
 
     Projeto desenvolvido no 7º semestre de ciência da computação.
+    
+	Fábio Luís
+	Coord. Auxiliar - Ciência da Computação e Sistemas de Informação
+	UNIP Cidade Universitária
+	http://www.unicluster.com.br
 
-   Objetivo:
-   
-   Criar um jogo retrô de Atari, no qual o jogo escolhido foi Keystone Kapers, que é baseado na série Keystone Cops, lançado em 1912, do gênero comédia, seus personagens eram policiais, civis e bandidos. Policiais que sempre era vistos em perseguição com veícos ou até mesmo a pé.
+	Time: Energy Charge
+	Desenvolvedores/Alunos:
+		Bruno de Paula - (https://github.com/bruninho-silva)
+		Marcelo Bueno - (https://github.com/marcelobueno25)
+		Wallan Pereira - (https://github.com/wallanpereira)
 
-    Time: Energy Charge
-
-    Desenvolvedores/Alunos:
-   
-        Bruno de Paula
-        Marcelo Bueno
-        Wallan Pereira
+    Objetivo:
+    
+    Criar um jogo retrô de Atari, no qual o jogo escolhido foi Keystone Kapers, que é baseado na série Keystone Cops, lançado em 1912, do gênero comédia, seus personagens eram policiais, civis e bandidos. Policiais que sempre era vistos em perseguição com veícos ou até mesmo a pé.
     
     Detalhes do APP
 
     Título: Police and Thief.
 
-    Gategoria:
-    
-    Adrenalina e Ação, você encontra aqui em Police and Thief.
+    Gategoria: Adrenalina e Ação, você encontra aqui em Police and Thief.
 
     Descrição do jogo:
-
+    
       Police and Thief, é um jogo criado para os amantes de Retro e aqueles que gostam de uma boa diversão, envolvendo
     adrenalina, suspense e aventura.
       O jogador no papel de policial, deve percorrer os andares de um shopping, em busca do bandido/fugitivo, mas não será
