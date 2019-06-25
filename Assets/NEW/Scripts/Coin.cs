@@ -21,7 +21,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("player"))
         {
-            ScoreTextScript.coinAmount += 1;
+            GameManager.coinAmount += 1;
             Instantiate(efeitoCoin, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y, this.gameObject.transform.position.z), Quaternion.identity);
             Destroy (gameObject);
         }

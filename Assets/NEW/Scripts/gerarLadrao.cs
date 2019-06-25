@@ -21,7 +21,7 @@ public class gerarLadrao : MonoBehaviour
             index = Random.Range(0, regeneraAleatorio.Length);
             regenera = regeneraAleatorio[index];
 
-            ScoreTextScript.coinAmount += 10;
+            GameManager.coinAmount += 10;
             Destroy(ladrao);
             gerar();
         }

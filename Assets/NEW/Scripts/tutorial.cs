@@ -11,7 +11,7 @@ public class tutorial : MonoBehaviour
     public GameObject tutorial03;
     public GameObject tutorial04;
 
-    private bool paused = false;
+    /*private bool paused = false;*/
 
     // Start is called before the first frame update
     void Start()
