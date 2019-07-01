@@ -13,7 +13,7 @@ public class gerarInimigo : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
             print("Entrou");
-            GameManager.coinAmount -= 5;
+            ScoreTextScript.coinAmount -= 5;
             Destroy(gameObject);
             gerar();
         }

@@ -27,7 +27,7 @@ public class pausaMenu : MonoBehaviour
         if(!paused)
         {
             PausaUI.SetActive(false);
-
+            Time.timeScale = 1;
         }
     }
 
